@@ -1,0 +1,1527 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clon</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/film.css">
+  <link rel="stylesheet" href="css/film2.css">
+</head>
+
+<body>
+  <div style="position: relative;">
+    <nav class="navbar navbar-expand-lg netflix-navbar netflix-padding-left netflix-padding-right">
+      <div class="container-fluid">
+        <div class="netflix-row">
+          <div class="left d-flex align-items-center">
+            <a class="navbar-brand" href="film.html">
+              <img src="netflix_logo.png" alt="">
+            </a>
+            <div class="netflix-nav">
+              <section>
+                <button>Anasayfa</button>
+                <button>Diziler</button>
+                <button>Filmler</button>
+                <button>Yeni & Popüler</button>
+                <button>Listem</button>
+              </section>
+            </div>
+            <div class="netflix-dropdown-box dropdown">
+              <button class="netflix-dropdown dropdown-toggle" type="button" id="dropdownMenuButton1"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Göz at
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="film.html">Anasayfa</a></li>
+                <li><a class="dropdown-item" href="#">Diziler</a></li>
+                <li><a class="dropdown-item" href="#">Filmler</a></li>
+                <li><a class="dropdown-item" href="#">Yeni & Popüler</a></li>
+                <li><a class="dropdown-item" href="#">Listem</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class=" d-flex align-items-center">
+            <div class="dropdown">
+              <i class="bi bi-search"></i>
+              <i class="bi bi-bell-fill "></i>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="img/trending/profil.png" style="width: 32px; height: 32px;" alt="">
+              </a>
+              <ul class="dropdown-menu ">
+                <li><a class="dropdown-item" href="profil.html">Profil Yönetimi</a></li>
+                <li><a class="dropdown-item" href="#">Profili Aktar</a></li>
+                <li><a class="dropdown-item" href="hesap.html">Hesap</a></li>
+                <li><a class="dropdown-item" href="#">Yardım Merkezi</a></li>
+                <li><a class="dropdown-item" href="index.html">Netflix Oturum Kapat</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  </nav>
+  
+
+  <div class="">
+    <section class="netflix-home-video">
+      <div class="top"></div>
+      <div class="bottom"></div>
+      <video src="video/video.mp4" autoplay muted loop></video>
+      <div class="content">
+        <section class="left">
+          <img src="img/trending/image2.webp" alt="">
+          <div class="d-flex mt-2">
+            <button class="btn btn-light m-2"> <i class="bi bi-play-fill" style="color: black; padding: 0%;"></i> Oynat
+            </button>
+            <button class="btn btn-secondary m-2"><i class="bi bi-info-circle" style=" padding: 0%;"></i> Daha Fazla
+              Bilgi</button>
+          </div>
+        </section>
+      </div>
+    </section>
+  </div>
+
+  <div class="slider-box">
+    <div class="container-fluid slider">
+      <section class="d-flex justify-content-between margin-right">
+        <p class="text-white"> <b>Türkiye'de Bugünün Top 10 Film Listesi</b> </p>
+        <div class="">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+          <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      </section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="position: relative; overflow: visible;">
+          <div class="carousel-item active">
+            <section class="d-flex">
+              <div class="card">
+                <img src="img/trending/img1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img2.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img3.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img4.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img5.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img6.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section class="d-flex">
+              <div class="card">
+                <img src="img/trending/img9.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="img/trending/img12.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img15.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img16.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section class="d-flex">
+              <div class="card">
+                <img src="img/trending/img17.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img18.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img19.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img20.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img21.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img22.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img23.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/img24.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Öncesi</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sonraki</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid slide2">
+      <section class="d-flex justify-content-between margin-right margin-title">
+        <p class="text-white"> <b>Listem</b> </p>
+        <div class="">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+          <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      </section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="position: relative; overflow: visible;">
+          <div class="carousel-item active">
+            <section class="d-flex">
+              <div class="card">
+                <img src="img/trending/film1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film2.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film4.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film5.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film6.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section class="d-flex ">
+              <div class="card">
+                <img src="img/trending/film7.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film8.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film9.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film10.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film11.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film12.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section class="d-flex ">
+              <div class="card">
+                <img src="img/trending/film13.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film14.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film15.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film16.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film17.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film18.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Önceki</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sonraki</span>
+        </button>
+      </div>
+    </div>
+    <div class="container-fluid  slide3">
+      <section class="d-flex justify-content-between margin-right margin-title2">
+        <p class="text-white"> <b>Yeni Çıkanlar</b> </p>
+        <div class="">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active tab-change-btn" aria-current="true" aria-label="Slide 1"></button>
+          <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button class="tab-change-btn" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        </div>
+      </section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" style="position: relative; overflow: visible;">
+          <div class="carousel-item active">
+            <section class="d-flex ">
+              <div class="card">
+                <img src="img/trending/film19.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film20.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film21.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film22.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film23.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film24.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section class="d-flex">
+              <div class="card">
+                <img src="img/trending/film25.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film26.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film27.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film28.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film29.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film30.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+
+            </section>
+          </div>
+          <div class="carousel-item">
+            <section class="d-flex ">
+              <div class="card">
+                <img src="img/trending/film31.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+
+              <div class="card">
+                <img src="img/trending/film32.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film33.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film34.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film35.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/trending/film36.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <section class="d-flex justify-content-between">
+                    <div>
+                      <i class="bi bi-play-circle-fill card-icon"></i>
+                      <i class="bi bi-plus-circle card-icon"></i>
+                    </div>
+                    <div>
+                      <i class="bi bi-arrow-down-circle card-icon"></i>
+                    </div>
+                  </section>
+                  <section class="d-flex align-items-center justify-content-between">
+                    <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0);">98% Eşleşme</p>
+                    <span class="m-2 netflix-card-text text-white">Yeni</span> <span
+                      class="border netflix-card-text p-1 text-white">HD</span>
+
+                  </section>
+                  <span class="netflix-card-text text-white">Sürükleyici • Gerilim • Yavaş Tempolu</span>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Önceki</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Sonraki</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer mt-5">
+    <div class="row">
+      <div class="col-md-10 mx-auto ">
+        <div class="row">
+          <div class="col-md-3 col-6">
+            <ul>
+              <li>Sesli Betimleme</li>
+              <li>Yatırımcı İlişkileri</li>
+              <li>Yasal Hükümler</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li>Yardım Merkezi</li>
+              <li>İş İmkanları</li>
+              <li>Çerez Tercihleri</li>
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li>Hediye Kartları</li>
+              <li>Kullanım Koşulları</li>
+              <li>Kurumsal Bilgiler</li>
+
+            </ul>
+          </div>
+          <div class="col-md-3 col-6">
+            <ul>
+              <li>Medya Merkezi</li>
+              <li>Gizlilik</li>
+              <li>Bize Ulaşın</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-10 mx-auto">
+        <div class="row">
+
+          <div class="col-12 text-center">
+            <p class="copy-right">Netflix, CLON ALPER 2023</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+@media(min-width:280px) and (max-width: 1024px) {
+    .netflix-padding-left {
+        padding-left: 10px !important;
+    }
+
+    .dropdown {
+        position: none !important;
+        right: 20% !important;
+    }
+
+    .netflix-padding-right {
+        padding-right: 10px !important;
+    }
+
+    .navbar-brand img {
+        width: 70px;
+    }
+
+    .navbar {
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+    }
+
+    i {
+        font-size: 12px;
+        cursor: pointer;
+        padding: 5px !important;
+    }
+
+    .netflix-profile {
+        margin-left: 6px;
+    }
+
+    .netflix-dropdown-box {
+        display: block;
+    }
+
+    .netflix-nav {
+        display: none !important;
+    }
+
+    /* video */
+    .netflix-home-video .content .left {
+        margin-left: 10px;
+    }
+
+    .netflix-home-video .content .left img {
+        width: 180px;
+        margin-top: 100px !important;
+    }
+
+    button {
+        font-size: 15px !important;
+        width: max-content !important;
+        opacity: 0.8;
+    }
+
+    /*video*/
+    .slider {
+        top: 255px;
+        margin-left: -4px;
+    }
+    
+
+    .card {
+        width: 250px;
+       
+        
+    }
+
+    .margin-right {
+        margin-right: unset;
+    }
+
+    .card-icon {
+        font-size: 15px !important;
+    }
+
+    .card-body {
+        top: 55px !important;
+        width: 111px;
+        height: 11vh;
+
+    }
+
+    .netflix-card-text {
+        font-size: 8px;
+        float: left;
+        justify-content: center;
+    }
+
+    .position-slider2 {
+        top: 0px !important;
+    }
+
+    .margin-title {
+        margin-top: 150px;
+    }
+
+    .margin-title2 {
+        margin-top: 25px;
+    }
+
+    .copy-right {
+
+        margin-left: 0px !important;
+    }
+}

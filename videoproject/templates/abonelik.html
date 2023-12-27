@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block css %}
+    <style>
+
+    </style>
+{% endblock css %}
+    
+
+
+{% block nonheader %}
+<style>
+  ul li{
+    line-height: 1.5rem;
+  }
+</style>
+<form method="POST">
+    {% csrf_token %}
+<div class="d-flex justify-content-around align-items-center" style="height: 700px;">
+      <div style="color: white; font-size: 18px;">
+        <h1 style="font-size: 3.5rem !important;">Kendinize uygun bir plan seçin</h1>
+        <ul >
+          <li>Canınız neyi isterse izleyin. Reklamsız.</li>
+          <li>Sadece sizin için önerilen içerikler.</li>
+          <li>Planınızı istediğiniz zaman değiştirebilir ya da iptal edebilirsiniz.</li>
+        </ul>
+      </div>
+    <div class="card text-light" style="width: 18rem; background: linear-gradient(to right, #dc2424, #4a569d); ">
+        <div class="card-body">
+          <h3 class="card-title">Aylık Paket</h3>
+          <p class="card-text">49.90 TL/ay</p>
+          <ul>
+            <li>4K ve HDR yayın sunan en iyi video kalitemiz</li>
+            <li>Televizyon, bilgisayar, cep telefonu ve tabletinizde seyredin</li>
+            <li>İndirme özelliği mevcut</li>
+          </ul>
+          <input type="hidden" name="aylikid" value="Aylık Ödeme Planı">
+          <button class="btn text-light border-0" style="background: linear-gradient(to right, #283048, #859398);"  type="submit" name="aylik" value="aylikbuton">Paket Seç</button>
+        </div>
+      </div>
+    <div class="card text-light" style="width: 18rem; background: linear-gradient(to right, #dc2424, #4a569d); ">
+        <div class="card-body">
+          <h3 class="card-title line-ar">Yıllık Paket</h3>
+          <p class="card-text">39.90 TL x 12 ay taksitle</p>
+          <ul>
+            <li>4K ve HDR yayın sunan en iyi video kalitemiz</li>
+            <li>Televizyon, bilgisayar, cep telefonu ve tabletinizde seyredin</li>
+            <li>İndirme özelliği mevcut</li>
+          </ul>
+          <input type="hidden" name="yillikid" value="Yıllık Ödeme Planı">
+          <button class="btn text-light border-0" style="background: linear-gradient(to right, #283048, #859398);" type="submit" name="yillik" value="yillikbuton">Paket Seç</button>
+        </div>
+      </div>
+    </div>
+    <p class="text-light w-75 m-auto opacity-50 text-center" >HD (720p), Tam HD (1080p), Ultra HD (4K) ve HDR kullanılabilirliği internet hizmetinize ve cihazınızın özelliklerine bağlıdır. Tüm içerikler bütün çözünürlüklerde mevcut olmayabilir. Ayrıntılar için <a href="#">Kullanım Koşulları</a> sözleşmemize bakın.
+      Bu hesabı sadece sizinle birlikte yaşayanlar kullanabilir. Özel planda aynı anda 4 farklı cihazda içerik izleyin. Standart planda bu sayı 2, Temel planda ise 1'dir.</p>
+</form>
+{% endblock nonheader %}
+    

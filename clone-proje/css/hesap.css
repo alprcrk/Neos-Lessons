@@ -1,0 +1,105 @@
+body {
+    background-color: white;
+    color: white;
+}
+
+footer ul li {
+    margin-top: 1.5rem;
+}
+
+footer ul li a {
+    color: rgb(111, 111, 111);
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+/*browse*/
+.navbar-color {
+    background-color: black !important;
+
+}
+
+.netflix-left {
+    padding-left: 57px;
+}
+
+.netflix-right {
+    padding-right: 57px;
+}
+
+.netflix-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand img {
+    width: 100px;
+}
+
+
+.netflix-nav button {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.netflix-nav button:hover {
+    color: rgba(255, 255, 255, 0.616);
+}
+
+i {
+    font-size: 20px;
+    padding: 5px 20px;
+}
+
+.right img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: .4rem;
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0.795);
+    margin-top: 20px;
+}
+
+.dropdown-item {
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+}
+
+.dropdown-item:hover {
+    background: none;
+    color: white;
+    text-decoration: underline;
+}
+
+.hesap {
+    background-color: white;
+    color: black;
+    margin-left: 70px;
+}
+
+.account li {
+    list-style: none;
+
+
+}
+
+.account li a {
+    text-decoration: none;
+
+}
+
+.account-img {
+    width: 5vh;
+    height: 5vh;
+
+}
