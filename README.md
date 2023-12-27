@@ -42,9 +42,12 @@ Bu repo, çeşitli teknolojileri kullanarak geliştirilmiş bir dizi örnek proj
    - ReactJS
 
 8. **Videoproject**
+   ! VideoProject projesi, staj sürecinde grup olarak geliştirilmiştir. Bu proje aynı zamanda bir final projesidir.
    - HTML
    - CSS
    - Bootstrap / MDBootstrap
    - JavaScript / jQuery 
    - Python / Django
-   
+
+
+
